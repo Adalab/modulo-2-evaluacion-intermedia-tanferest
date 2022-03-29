@@ -4,24 +4,29 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:wght@200;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles/main.css">
     <title>Dados y apuestas</title>
 </head>
 <body>
-    <main>
-        <h1 class="main-title">Dados y apuestas</h1>
+        <header class="header">
+            <h1 class="main-title">Dados y apuestas</h1>
+        </header>
+        <main class="main">
         <h2 class="sub-title">Introduce aquí tu jugada:</h2>
-            <select class="js-select" name="" id="">
-                <option value="" selected disabled>¿Qué número escoges del 1 al 6?</option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-                <option value="6">6</option>
-            </select>
-            <input class="js-bet" type="number" value="" placeholder="¿Cuánto apuestas?">
-            <button class="btn js-btn">Jugar</button>
+            <form class="form" action="">
+                <select class="select js-select" name="" id="">
+                    <option class="default-option" value="" selected disabled>¿Qué número escoges del 1 al 6?</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                </select>
+                <input class="select js-bet" type="text" value="" placeholder="¿Cuánto apuestas?">
+                </form>
+                <button class="btn js-btn">Jugar</button>
         <p class="message js-message">¡Vamos a jugar!</p>
         <p class="js-balance">Saldo: 50</p>
     </main>

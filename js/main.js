@@ -15,11 +15,17 @@ function getRandomNumber(max) {
 function checkNumber() {
   const selectedDice = parseInt(diceSelect.value);
   const computerNum = getRandomNumber(6);
+  const betAmount = parseInt(bet.value);
+  let balanceAmount = 50;
+  let currentAmount = '';
   if (selectedDice === computerNum) {
-    message.innerHTML = `<p>¡Has ganado el doble de lo apostado! :)</p><p>Jugada del ordenador ${computerNum}</p>`;
+    message.innerHTML = `<p>¡Has ganado el doble de lo apostado! :)</p><p>Jugada del ordenador: ${computerNum}</p>`;
+    balanceAmount += betAmount;
   } else {
-    message.innerHTML = `<p>Has perdido lo apostado :(</p><p>Jugada del ordenador ${computerNum}</p>`;
+    message.innerHTML = `<p>Has perdido lo apostado :(</p><p>Jugada del ordenador: ${computerNum}</p>`;
+    balanceAmount -= betAmount;
   }
+  balance.innerHTML = `Saldo: ${balanceAmount}`;
   console.log(selectedDice);
   console.log(computerNum);
 }
