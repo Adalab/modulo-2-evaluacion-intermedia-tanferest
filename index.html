@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/main.css">
+    <title>Dados y apuestas</title>
+</head>
+<body>
+    <main>
+        <h1 class="main-title">Dados y apuestas</h1>
+        <h2 class="sub-title">Introduce aquí tu jugada:</h2>
+            <select name="dice-num" id="dice-num">
+                <option value="" selected disabled>¿Qué número escoges del 1 al 6?</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+            </select>
+            <input type="number" value="" placeholder="¿Cuánto apuestas?">
+            <button class="btn js-btn">Jugar</button>
+        <p class="message js-message">¡Vamos a jugar!</p>
+        <p>Saldo: 50</p>
+    </main>
+    <script src="./js/main.js"></script>
+</body>
+</html>
